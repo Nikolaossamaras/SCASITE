@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="guess.html" class="active">Guessing game</a>
+        <a href="temperature.html">Temperature converter</a>
+    </nav>
+
+    <form>
+        <h1>Guessing game!</h1>
+        <input type="number" id="min">
+        <label>select the min number</label><br>
+        <input type="number" id="max">
+        <label>select the max number</label><br>
+        <button type="button" onclick="generate()">submit</button>
+        <p>👇Here you make your guesses👇</p>
+        <input type="number" id="guess"><br>
+        <button type="button" id="guess-btn">submit</button>
+        <p id="result"></p>
+    </form>
+
+    <script src="js/guess.js"></script>
+</body>
+</html>

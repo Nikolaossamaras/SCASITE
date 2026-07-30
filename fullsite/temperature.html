@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature conversion</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="guess.html">Guessing game</a>
+        <a href="temperature.html" class="active">Temperature converter</a>
+    </nav>
+
+    <form>
+        <h1>Temperature conversion:</h1>
+        <input type="number" id="textBox" value = "0"><br>
+
+        <input type="radio" id="toFah" name="unit">
+        <label for="toFah">To Fahrenheit</label><br>
+        <input type="radio" id="toCel" name="unit">
+        <label for="toCel">To Celsius</label><br>
+
+        <button type="button" onclick="convert()">submit</button>
+        <p id="result"></p>
+    </form>
+
+    <script src="js/temperature.js"></script>
+</body>
+</html>
